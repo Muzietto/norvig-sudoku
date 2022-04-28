@@ -1,0 +1,40 @@
+{
+  "name": "norvig-sudoku",
+  "version": "0.0.1",
+  "description": "implementing \"Solving Every Sudoku Puzzle\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --require @babel/register \"src/**/*.spec.js\"",
+    "test:coverage": "cross-env NODE_ENV=coverage nyc --reporter=lcov mocha \"src/**/*.spec.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muzietto/norvig-sudoku.git"
+  },
+  "keywords": [
+    "sudoku"
+  ],
+  "author": "Marco Faustinelli (marco_faustinelli@yahoo.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Muzietto/norvig-sudoku/issues"
+  },
+  "homepage": "https://github.com/Muzietto/norvig-sudoku#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/node": "^7.16.8",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/register": "^7.17.7",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "cross-env": "^7.0.3",
+    "mocha": "^7.2.0",
+    "nodemon": "^2.0.15",
+    "nyc": "^15.1.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.17.9"
+  }
+}
